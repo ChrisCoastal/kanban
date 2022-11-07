@@ -1,13 +1,18 @@
-import { ReducerAction } from 'react';
-import { BoardsActions } from 'src/@types';
+import {
+  BoardsActionsType,
+  BoardsReducerActions,
+  BoardsType,
+} from 'src/@types';
 
-const reducer = (state: any, action: ReducerAction<>) => {
+const reducer = (state: BoardsType, action: BoardsReducerActions) => {
   const { type, payload } = action;
 
   switch (type) {
-    case BoardsActions.ADD_BOARD: {
+    case BoardsActionsType.ADD_BOARD: {
       return { ...state, payload };
     }
+    default:
+      return state;
   }
 };
 

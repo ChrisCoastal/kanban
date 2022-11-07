@@ -1,9 +1,9 @@
 import React from 'react';
 
-type Props = {};
+// type Props = {};
 
-const Board = (props: Props) => {
-  return <div>Board</div>;
+const Board = () => {
+  return <div></div>;
 };
 
 export default Board;
